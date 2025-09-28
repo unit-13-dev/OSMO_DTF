@@ -3,8 +3,8 @@ import { readContract, writeContract, waitForTransactionReceipt, getBalance } fr
 import { decodeEventLog } from 'viem';
 import { config } from '@/config/wagmiadapter';
 import { CONTRACT_ADDRESSES, DTF_CONSTANTS } from '@/config/contracts';
-import DTF_ABI from '@/dtf/abi/DTF';
-import DTFFACTORY_ABI from '@/dtf/abi/DTFFactory';
+import DTF_ABI from '@/DTF/abi/DTF';
+import DTFFACTORY_ABI from '@/DTF/abi/DTFFactory';
 
 // Types
 export interface DTFData {
@@ -652,7 +652,7 @@ export const realTimeFunctions = {
 };
 
 // Export all functions
-export const dtfContract = {
+export const ract = {
   factory: factoryFunctions,
   dtf: dtfFunctions,
   realTime: realTimeFunctions,

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createPublicClient, http } from 'viem';
 import { unichainSepolia } from 'viem/chains';
 import { CONTRACT_ADDRESSES } from '@/config/contracts';
-import DTFFACTORY_ABI from '@/dtf/abi/DTFFactory';
+import DTFFACTORY_ABI from '@/DTF/abi/DTFFactory';
 
 export async function GET(request: NextRequest) {
   try {
